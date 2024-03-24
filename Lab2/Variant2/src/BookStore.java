@@ -28,6 +28,38 @@ public class BookStore implements Serializable{
     private void writeObject(ObjectOutputStream out) throws IOException {
         out.defaultWriteObject();
         out.writeInt(books.size());
+        for (Book book : books) {
+            out.writeObject(book.getTitle());
+            out.writeInt(book.getYear());
+            out.writeInt(book.getAuthors().size());
+            for (Author author : book.getAuthors()) {
+                out.writeObject(author.getName());
+                out.writeObject(author.getSurname());
+            }
+            out.writeInt(book.getNumber());
+        }
+    }
+
+    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+        in.defaultReadObject();
+        books = new ArrayList<Book>();
+        int size = in.readInt();
+        for (int i = 0; i < size; i++) {
+            String title = (String) in.readObject();
+            int year = in.readInt();
+            int count = in.readInt();
+            ArrayList<Author> authors = new ArrayList<Author>(count);
+            for (int j = 0; j < count; j++) {
+                Author author = new Author((String) in.readObject(), (String) in.readObject());
+                authors.add(author);
+            }
+            int number = in.readInt();
+            Book book = new Book(title, year, number, authors.toArray(new Author[0]));
+            books.add(book);
+        }
+    }/*private void writeObject(ObjectOutputStream out) throws IOException {
+        out.defaultWriteObject();
+        out.writeInt(books.size());
         for (Book book :
                 books) {
             out.writeObject(book.getTitle());
@@ -59,5 +91,5 @@ public class BookStore implements Serializable{
             Book book = new Book(title, year, number, new Author[0]);
             books.add(book);
         }
-    }
+    }*/
 }
