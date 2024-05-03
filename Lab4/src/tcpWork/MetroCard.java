@@ -8,7 +8,10 @@ public class MetroCard implements Serializable {
     private String college;
     private double balance;
     public MetroCard(){
-
+        serNum = "00001";
+        usr = new User();
+        college = "University";
+        balance = 0.00;
     }
 
     public MetroCard(String serNum, User usr, String college, double balance){

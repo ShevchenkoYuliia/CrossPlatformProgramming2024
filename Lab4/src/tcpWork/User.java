@@ -12,6 +12,16 @@ public class User implements Serializable {
     private static final DateFormat dateParser = dateFormatter;
     private String name, surName, patronymic, gender;
     private Date birthday;
+    public User(){
+        name = "Ann";
+        surName = "Smith";
+        gender = "female";
+        try {
+            birthday = dateParser.parse("14.10.2000");
+        } catch (ParseException e) {
+            System.out.println("Error: " + e);
+        }
+    }
     public User(String name, String surName, String patronymic, String gender, String birthday) {
         this.name = name;
         this.surName = surName;

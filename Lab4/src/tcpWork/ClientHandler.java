@@ -57,7 +57,7 @@ public class ClientHandler extends Thread{
             removeCard(obj);
         } else if (obj instanceof ShowBalanceOperation) {
             showBalance(obj);
-        } else if (obj instanceof ShowBalanceOperation) {
+        } else if (obj instanceof GetCardInfoOperation) {
             getInfo(obj);
         } else {
             error();
@@ -125,7 +125,7 @@ public class ClientHandler extends Thread{
     }
     private void getInfo(Object obj) throws IOException {
         GetCardInfoOperation operation = (GetCardInfoOperation) obj;
-        int index = bnk.findMetroCard(((GetCardInfoOperation)obj).getSerNum());
+        int index = bnk.findMetroCard(operation.getSerNum());
         if (index >= 0){
             os.writeObject(bnk.getStore().get(index).toString());
             os.flush();

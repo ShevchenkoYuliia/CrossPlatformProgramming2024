@@ -65,5 +65,8 @@ public class Client {
         cl.applyOperation(new PayMoneyOperation("00001", 15.0));
         cl.applyOperation(new ShowBalanceOperation("00001"));
         cl.finish();
+        cl = new Client("localhost", 7891);
+        cl.applyOperation(new GetCardInfoOperation("00001"));
+        cl.finish();
     }
 }
