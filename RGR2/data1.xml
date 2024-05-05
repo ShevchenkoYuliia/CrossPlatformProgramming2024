@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="Windows-1251" standalone="no"?>
+<jb_data>
+    <dataTable>
+        <dataPoint date="10.03.2015">
+            <x>1.1</x>
+            <y>1.01</y>
+        </dataPoint>
+        <dataPoint date="11.03.2015">
+            <x>2.2</x>
+            <y>2.3</y>
+        </dataPoint>
+        <dataPoint date="12.03.2015">
+            <x>3.3</x>
+            <y>3.05</y>
+        </dataPoint>
+        <dataPoint date="13.03.2015">
+            <x>4.4</x>
+            <y>4.28</y>
+        </dataPoint>
+        <dataPoint date="14.03.2015">
+            <x>5.5</x>
+            <y>5.75</y>
+        </dataPoint>
+        <dataPoint date="15.03.2015">
+            <x>6.6</x>
+            <y>6.48</y>
+        </dataPoint>
+        <dataPoint date="16.03.2015">
+            <x>7.7</x>
+            <y>7.84</y>
+        </dataPoint>
+    </dataTable>
+</jb_data>
