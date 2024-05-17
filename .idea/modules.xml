@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lab2/Lab2.iml" filepath="$PROJECT_DIR$/Lab2/Lab2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab3/Lab3.iml" filepath="$PROJECT_DIR$/Lab3/Lab3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practice1/Practice1.iml" filepath="$PROJECT_DIR$/Practice1/Practice1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RGR2/RGR2.iml" filepath="$PROJECT_DIR$/RGR2/RGR2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week1/Lab1/Task1/Task1.iml" filepath="$PROJECT_DIR$/Week1/Lab1/Task1/Task1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week1/Lab1/Task2/Task2.iml" filepath="$PROJECT_DIR$/Week1/Lab1/Task2/Task2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week1/Lab1/Task3/Task3.iml" filepath="$PROJECT_DIR$/Week1/Lab1/Task3/Task3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week1/Lab1/Task4/Task4.iml" filepath="$PROJECT_DIR$/Week1/Lab1/Task4/Task4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week1/Lab1/Task5/Task5.iml" filepath="$PROJECT_DIR$/Week1/Lab1/Task5/Task5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab2/Variant2/Variant2.iml" filepath="$PROJECT_DIR$/Lab2/Variant2/Variant2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab2/Variant3/Variant3.iml" filepath="$PROJECT_DIR$/Lab2/Variant3/Variant3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/git.iml" filepath="$PROJECT_DIR$/.idea/git.iml" />
+    </modules>
+  </component>
+</project>
